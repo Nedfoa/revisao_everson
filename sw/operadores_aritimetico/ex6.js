@@ -3,10 +3,19 @@
 //Depois diminua em 1 usando decremento.
 //Exiba cada resultado no console.
 
-let contador = 10;
+function resposta6() {
+    let contador = 10;
 
-contador++; // incremento
-console.log("Após incremento:", contador); 
+    contador++; // 11
+    const incremento = contador;
 
-contador--; 
-console.log("Após decremento:", contador); 
+    contador--; // volta pra 10
+    const decremento = contador;
+
+    return {
+        incremento,
+        decremento
+    };
+}
+
+export default resposta6;

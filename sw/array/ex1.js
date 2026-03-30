@@ -2,12 +2,17 @@
 //const numeros = [5, 10, 15, 20, 25];
 //Crie um programa que calcule a soma de todos os elementos do array e exiba o resultado no console.
 
-const numeros = [5, 10, 15, 20, 25];
+function soma(n) {
+  
 
-let soma = 0;
+  let soma = 0;
 
-for (let i = 0; i < numeros.length; i++) {
-  soma += numeros[i];
+  for (let i = 0; i < n.length; i++) {
+    soma += n[i];
+  }
+
+  return soma;
 }
 
-console.log("Soma dos números:", soma);
+ 
+export default soma;
