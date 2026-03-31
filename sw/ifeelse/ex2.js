@@ -4,13 +4,13 @@
 //Se for 18 ou mais, mostre "Pode dirigir".
 //Se for menor que 18, mostre "Não pode dirigir".
 
-function suficiente() {
-   let idade = 18;
-   if (idade >= 17) {
+function suficiente(faixaEtaria) {
+   
+   if (faixaEtaria >= 17) {
       return "Pode dirigir";
    }
 }
 
-console.log(suficiente())
+//console.log(suficiente())
 
 export default suficiente;

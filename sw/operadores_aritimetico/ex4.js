@@ -1,10 +1,8 @@
 //Crie duas variáveis dividendo = 50 e divisor = 10. Calcule a divisão e exiba no console.
 
-function resposta4() {
-    const dividendo = 50;
-    const divisor = 10;
+function resposta4(n1, n2) {
 
-    const resultado = dividendo / divisor;
+    const resultado = n1 / n2;
     return resultado;
 }
 

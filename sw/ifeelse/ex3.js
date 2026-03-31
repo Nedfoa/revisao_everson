@@ -4,19 +4,20 @@
 //5 a 6.9 → "Regular"
 //Menor que 5 → "Insuficiente"
 
-function notaAluno(){ 
-let nota = 9
-if (nota >= 8) {
+function notaAluno(notaEscolar){ 
+
+
+if (notaEscolar >= 8) {
     return "Exelente";
-} else if (nota >= 7) {
+} else if (notaEscolar >= 7) {
     return "Bom";
-} else if (nota >= 5) {
+} else if (notaEscolar >= 5) {
     return "regular";
 } else {
  return "Insuficiente";
  }
 }
 
-console.log(notaAluno())
+//console.log(notaAluno())
 
 export default notaAluno;

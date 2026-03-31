@@ -10,32 +10,39 @@ import resposta6 from "../sw/operadores_aritimetico/ex6.js";
 import resposta7 from "../sw/operadores_aritimetico/ex7.js"; 
 
 
-router_operadores.get('/somaVariaveis', (req,res)=>{
-    res.json({"resultado": resposta1()})
+router_operadores.post('/somaVariaveis', (req,res)=>{
+    let {soma, soma2} = req.body
+    res.json({"resultado": resposta1(soma, soma2)})
 })
 
-router_operadores.get('/diferenca', (req,res)=>{
-    res.json({"Produtos": resposta2()})
+router_operadores.post('/diferenca', (req,res)=>{
+    let{n1, n2} = req.body
+    res.json({"Produtos": resposta2(n1, n2)})
 })
 
-router_operadores.get('/produto', (req,res)=>{
-    res.json({"resultado": resposta3()})
+router_operadores.post('/produto', (req,res)=>{
+    let {num1, num2} = req.body
+    res.json({"resultado": resposta3(num1, num2)})
 })
 
-router_operadores.get('/divisao', (req,res)=>{
-    res.json({"resultado": resposta4()})
+router_operadores.post('/divisao', (req,res)=>{
+    let{divisor, dividendo}= req.body
+    res.json({"resultado": resposta4(dividendo, divisor)})
 })
 
-router_operadores.get('/resto', (req,res)=>{
-    res.json({"resultado": resposta5()})
+router_operadores.post('/resto', (req,res)=>{
+    let { n1, n2} = req.body
+    res.json({"resultado": resposta5(n1, n2)})
 })
 
-router_operadores.get('/contador', (req,res)=>{
-    res.json({"resultado": resposta6()})
+router_operadores.post('/contador', (req,res)=>{
+    let {contador} = req.body
+    res.json({"resultado": resposta6(contador)})
 })
 
-router_operadores.get('/expressao', (req,res)=>{
-    res.json({"resultado": resposta7()})
+router_operadores.post('/expressao', (req,res)=>{
+    let {n1, n2, n3} = req.body
+    res.json({"resultado": resposta7(n1, n2, n3)})
 })
 
 export {router_operadores}

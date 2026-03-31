@@ -1,6 +1,5 @@
-function resposta2() {
-    const x = 20;
-    const y = 8;
+function resposta2(x, y) {
+    
 
     const diferenca = x - y;
     return diferenca;

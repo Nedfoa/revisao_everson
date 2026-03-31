@@ -1,4 +1,4 @@
-function mostrarProdutos (){
+function mostrarProdutos (n){
     const produtos = [
         {
             "nome": "vanish",
@@ -41,10 +41,10 @@ function mostrarProdutos (){
     
         }
     ]
-    return produtos;
+    return produtos[n];
 }
 
-console.log(mostrarProdutos())
+//console.log(mostrarProdutos())
 
 export default mostrarProdutos;
 

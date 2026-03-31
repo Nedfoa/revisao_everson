@@ -5,8 +5,9 @@ import resposta from '../sw/switch/switch.js';
 
 
 
-router_switch.get('/diaSemana', (req,res)=>{
-    res.json({"Dia da semana:": resposta()})
+router_switch.post('/diaSemana', (req,res)=>{
+    let {diaSemana} = req.body
+    res.json({"Dia da semana:": resposta(diaSemana)})
 })
 
 

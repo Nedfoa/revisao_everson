@@ -2,12 +2,12 @@
 //const nomes = ["Ana", "Bruno", "Carla", "Diego"];
 //Use o método forEach() para exibir cada nome em maiúsculas no console.
 
-function nomeMaiusculo() {
-  const nomes = ["Ana", "Bruno", "Carla", "Diego"];
+function nomeMaiusculo(nomes) {
+  
 
   return nomes.map((nome) => nome.toUpperCase());
 }
 
-console.log(nomeMaiusculo())
+//console.log(nomeMaiusculo())
 
 export default nomeMaiusculo;

@@ -12,8 +12,12 @@ router_arrays.post('/somaarrays', (req,res)=>{
     res.json({"Soma": soma(numeros)})
 })
 
-router_arrays.get('/maiornumero', (req,res)=>{
-    res.json({"maior número:": maiorNumero()})
+router_arrays.post('/maiornumero', (req,res)=>{
+
+    let  {numeros} = req.body
+    res.json({"maior número:": maiorNumero(numeros)})
+
+
 });
 
 export {router_arrays}

@@ -2,8 +2,6 @@
 
 
 function resposta1(a, b) {
-    const a = 10;
-    const b = 5;
 
     const soma = a + b;
     return soma;

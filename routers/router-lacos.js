@@ -8,24 +8,29 @@ import somaTotal from "../sw/lacos/ex3.js";
 import nomeMaiusculo from "../sw/lacos/ex4.js";
 import numeroDobrado from "../sw/lacos/ex5.js";
 
-router_lacos.get('/soma', (req,res)=>{
-    res.json({"total": total1()})
+router_lacos.post('/soma', (req,res)=>{
+    let {soma} = req.body
+    res.json({"total": total1(soma)})
 })
 
-router_lacos.get('/numerosPares', (req,res)=>{
-    res.json({"total:": total2()})
+router_lacos.post('/numerosPares', (req,res)=>{
+    let {numeros} = req.body
+    res.json({"total:": total2(numeros)})
 });
 
-router_lacos.get('/inteiro', (req,res)=>{
-    res.json({"soma total:": somaTotal()})
+router_lacos.post('/inteiro', (req,res)=>{
+    let {inteiro} = req.body
+    res.json({"soma total:": somaTotal(inteiro)})
 });
 
-router_lacos.get('/maiusculas', (req,res)=>{
-    res.json({"nome:": nomeMaiusculo()})
+router_lacos.post('/maiusculas', (req,res)=>{
+    let {capslock} = req.body
+    res.json({"nome:": nomeMaiusculo(capslock)})
 });
 
-router_lacos.get('/numeros', (req,res)=>{
-    res.json({"dobro:": numeroDobrado()})
+router_lacos.post('/numeros', (req,res)=>{
+    let {oDobro} = req.body
+    res.json({"dobro:": numeroDobrado(oDobro)})
 });
 
 export {router_lacos}

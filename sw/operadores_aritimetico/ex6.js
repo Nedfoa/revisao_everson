@@ -3,8 +3,8 @@
 //Depois diminua em 1 usando decremento.
 //Exiba cada resultado no console.
 
-function resposta6() {
-    let contador = 10;
+function resposta6(contador) {
+
 
     contador++; // 11
     const incremento = contador;

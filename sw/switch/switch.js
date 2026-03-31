@@ -9,8 +9,8 @@
 //Se o número for diferente de 1 a 7, exiba "Dia inválido".
 
 
-function resposta() {
-    const dia = 3;
+function resposta(dia) {
+    
 
     switch(dia) {
         case 1:
@@ -32,6 +32,6 @@ function resposta() {
     }
 }
 
-console.log(resposta());
+//console.log(resposta());
 
 export default resposta;
