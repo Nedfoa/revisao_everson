@@ -9,6 +9,9 @@ function suficiente(faixaEtaria) {
    if (faixaEtaria >= 17) {
       return "Pode dirigir";
    }
+   else{
+      return ("não pode dirigir")
+   }
 }
 
 //console.log(suficiente())

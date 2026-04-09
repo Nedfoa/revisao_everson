@@ -1,4 +1,4 @@
-// crie um programa que peça ao usuário um número inteiro positivo
+// crie um programa que peça ao usuário um número inteiro positivo e some todos os numeros até o informado
 
 function somaTotal(numero) {
     let soma = 0;

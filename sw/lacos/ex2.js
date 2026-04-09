@@ -1,5 +1,5 @@
 //mostrar todos os numeros pares de 0 até o numero informado
-//exibir também quantos números pares foram encontradosno total
+//exibir também quantos números pares foram encontrados no total
 //pede um numero ao usuario
 
 function total2(limite) {

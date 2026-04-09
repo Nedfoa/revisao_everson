@@ -1,4 +1,4 @@
-function resposta2(x, y) {
+ function resposta2(x, y) {
     
 
     const diferenca = x - y;
